@@ -62,4 +62,4 @@ Equivalent to `build:ui` (Vite) then `build:code` (esbuild). Ship the `dist/` fo
 
 ## License
 
-Add your license here if applicable.
+MIT
