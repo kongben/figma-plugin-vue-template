@@ -1,0 +1,21 @@
+{
+  "name": "figma-plugin-vue",
+  "version": "1.0.0",
+  "description": "A Figma plugin built with Vue 3 + Vite",
+  "scripts": {
+    "dev": "node scripts/dev.mjs",
+    "build": "npm run build:ui && npm run build:code",
+    "build:ui": "vite build",
+    "build:code": "esbuild src/code.ts --bundle --outfile=dist/code.js --target=es2020"
+  },
+  "devDependencies": {
+    "@figma/plugin-typings": "^1.104.0",
+    "@vitejs/plugin-vue": "^5.2.1",
+    "esbuild": "^0.24.2",
+    "typescript": "^5.7.2",
+    "vite": "^6.0.7",
+    "vite-plugin-singlefile": "^2.0.3",
+    "vue": "^3.5.13",
+    "vue-tsc": "^2.2.0"
+  }
+}
